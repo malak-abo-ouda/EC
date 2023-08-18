@@ -1,0 +1,72 @@
+
+.cards {
+    margin-top: 7rem;
+}
+.cards .textCardhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards .textCardhead p{
+    font-size: 29px;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+}
+.cards .textCardhead .btn-show{
+    border-radius: 40px;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 1px solid #e0e0e0;
+    padding:   0.5rem 1rem;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+.cards .textCardhead .btn-show:hover {
+    background-color: #FBB03B;
+}
+.cards .card {
+    border: none !important;
+    margin: auto;
+
+}
+.cards .card p {
+    font-size: 16px;
+    font-weight: 300;
+}
+.cards .card span {
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+
+ .card .num {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color:#FF0000 ;
+    border-radius: 30px;
+    padding: 0.3rem 1.2rem;
+    color: #fff;
+}
+
+
+
+
+.swiper-slide img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    padding: 10px;
+}
+.swiper-button-next:after,
+ .swiper-button-prev:after {
+    color: rgba(0, 0, 0, 0.918);
+ }
+ .swiper-pagination-bullet {
+    width: 30px;
+    height: 5px; 
+    border-radius: 0;
+    background-color: white;
+ }

@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- fontawesome style css  -->
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- My css style -->
+    <link rel="stylesheet" href="../css/style.css">
+     <!-- my responsev style css -->
+     <link rel="stylesheet" href="../css/respon.css">
+    <title>Ec</title>
+</head>
+<body>
+ <!-- - header -->
+  <header class="header header2 container-fluid ">
+    <div class="div-logo">
+      <img class="img1" src="../img/sec1/logo-sm.png" alt="img-logo">
+      <span>E-Shop</span>
+    </div>
+    <nav class="navbar nav-menu" >
+            <a id="a-men" class="nav-link" aria-current="page" href="#">Men</a>
+            <a class="nav-link" href="#">Women</a>
+            <a class="nav-link" href="#">Kids</a>
+            <a href="#" class="d-none" id="login-btn" >
+              <button  class="btn w-25 bg-danger  ">login</button>
+            </a>
+    </nav>
+      <div class="icon-head d-flex">
+        <!-- <i class=" fa-solid fa-magnifying-glass" id="search-icon"></i>
+          <i class=" fa-regular fa-cart-shopping" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></i>
+        <i id="user" class="fa-regular fa-user"></i> -->
+
+        <div class="nav-item">
+          <a class="nav-link" href="#">
+            <i class=" fa-solid fa-magnifying-glass" id="search-icon"></i>
+          </a>
+        </div>
+       <div class="nav-item">
+        <a class="nav-link cartBtn" href="#">
+          <i class=" fa-regular fa-cart-shopping" data-bs-toggle="offcanvas" data-bs-target="#shirtList" aria-controls="offcanvasTop"></i>
+          <div class="number">0</div>
+        </a>
+       </div>
+       <div class="nav-item">
+        <a class="nav-link" href="#">
+          <i id="user" class="fa-regular fa-user"></i>
+        </a>
+      </div>
+
+        <div class="list">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+  </div>
+  <div class="bg-white text-black section-men">
+    <div class="container">
+      <div class="row div-men">
+        <button id="closeMen" class="btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="col-6 col-md-3 ">
+          <h5>Sale</h5>
+          <a href="#">Bestsellers</a>
+          <a href="#">Latest Arrivals</a>
+        </div>
+        <div class="col-6 col-md-3 ">
+          <h5>Shoes</h5>
+          <a href="#">Lifestyle</a>
+          <a href="#">Running</a>
+          <a href="#">Soccer</a>
+          <a href="#">Basketball</a>
+          <a href="#">Football</a>
+          <a href="#">Golf</a>
+          <a href="#">Baseball</a>
+        </div>
+        <div class="col-6 col-md-3">
+          <h5>Clothing</h5>
+          <a href="#">Pants</a>
+          <a href="#">Hoodies & Sweatshirts</a>
+          <a href="#">Jackets & Vests</a>
+          <a href="#">Track Suits</a>
+          <a href="#">Short Sleeve Shirts</a>
+          <a href="#">T-Shirts</a>
+          <a href="#">Jerseys</a>
+          <a href="#">Shorts</a>
+          <a href="#">Jeans</a>
+        </div>
+        <div class="col-6 col-md-3 ">
+          <h5>Accesorries</h5>
+          <a href="#">Backpacks</a>
+          <a href="#">Caps & Hats</a>
+          <a href="#">Watches</a>
+          <a href="#">Belts</a>
+          <a href="#">Bags</a>
+          <a href="#">Wallets & Cases</a>
+          <a href="#">Scarves</a>
+          <a href="#">Glasses</a>
+        </div>
+      </div>
+  
+    </div>     
+  </div>
+  </header>
+ <!-- + header -->
+
+<!-- + Sec Shirt  -->
+<section class=" Shirt text-black">
+  <div class="container">
+    <!-- start head -->
+   <div class="head row">
+    <div class="col-12 col-md-5 ">
+      <i class="menshrit fa-light fa-house"></i>
+      <span class="menshrit">Men`s Tops</span>
+      <span class="menshrit">T-Shirt</span>
+      <span class="Summerspana">T-Shirt Summer Vibes</span>
+    </div>
+    <div class="col-12 col-md-7 mt-4 d-flex flex-wrap">
+      <div class="d-flex w-50 align-items-center justify-content-center">
+        <i class="mb-3 me-4 fa-solid fa-caravan-simple"></i>
+        <div>
+          <p class="p1">Standard shipment</p>
+          <p class="p2" >Free within 3-6 business days</p>
+        </div>
+      </div>
+      <div class="d-flex w-50 align-items-center justify-content-center">
+        <i class="mb-3 me-4 fa-duotone fa-car-side"></i>
+        <div>
+          <p class="p1">Express delivery</p>
+          <p class="p2">$35,00 available</p>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- end head -->
+
+    <!-- start hero-shirt -->
+     <div class="hero-shirt mt-5 row">
+      <div class="img smmall d-sm-block d-none d-xl-grid col-2 col-sm-2 col-lg-1 d-flex flex-column gap-2">
+            <img src="../img/sec1-peg2/imgbig1.svg" alt="img">
+            <img src="../img/sec1-peg2/img2.svg" alt="img">
+            <img src="../img/sec1-peg2/img3.svg" alt="img">
+            <img src="../img/sec1-peg2/img4.svg" alt="img">
+      </div>
+        <div class="img-big  d-sm-block d-none col-3  col-lg-5  ">
+          <img id="bigimg" src="../img/sec1-peg2/imgbig1.svg" alt="img">
+        </div>
+        <div class="swiper-sec2 d-block d-sm-none ">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class=" swiper-slide">
+                    <img src="../img/sec1-peg2/imgbig1.svg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class=" swiper-slide">
+                  <img src="../img/sec1-peg2/img2.svg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="swiper-slide ">
+                  <img src="../img/sec1-peg2/img3.svg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="swiper-slide ">
+                  <img src="../img/sec1-peg2/img4.svg" class="img-fluid rounded-start" alt="...">
+                </div>
+            </div>
+          <div class="swiper-pagination"></div>   
+          </div>
+          
+
+    </div>
+
+      <div class="color-text mt-5 mt-md-0 col-12 col-lg-4">
+        <div class="text1">
+          <p class="p1text" href="#">SALE</p>
+          <p class="p2text">T-Shirt Summer Vibes</p>
+          <span class="span1text">$89.99</span>
+          <span class="span2text">$119.99</span>
+        </div>
+        <div class="Color">
+          <p>Color:</p>
+
+          <div class="d-flex ">
+            <div class="div-color "><span class="span-color span1" value="../img/sec1-peg2/img2.svg"></span></div>
+            <div class="div-color"><span class="span-color span2" value="../img/sec1-peg2/img3.svg"></span></div>
+            <div class="div-color"><span class="span-color span3" value="../img/sec1-peg2/img4.svg"></span></div>
+            <div class="div-color"><span class="span-color span4" value="../img/sec1-peg2/imgbig1.svg "></span></div>
+          </div>
+         
+        </div>
+        <div class="Size">
+          <p>Size:</p>  
+          <select class="form-select form-select-sm" aria-label="Small select example">
+            <option selected> CHOOSE SIZE</option>
+            <option value="1">S</option>
+            <option value="2">M</option>
+            <option value="3">L</option>
+            <option value="3">XL</option>
+            <option value="3">XXL</option>
+            <option value="3">XXXL</option>
+          </select>
+        </div>
+        <div class="Quantity">
+          <p>Quantity:</p>
+          <div class="d-flex align-items-center gap-3 ">
+            <div class="wrapper "> 
+              <span class="minus">-</span>
+              <span class="px-3 num">1</span>
+              <span class="plus">+</span>
+            </div>
+            <button class="btnadd">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="Parq col-12 col-lg-2">
+        <p>Product ID: <br>
+          261311</p>
+        <p >H O U S E M Y B R A N D</p>
+      </div>
+    </div> 
+   <!-- end hero-shirt -->
+
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+       aria-labelledby="pills-home-tab" tabindex="0">
+        <div class="row  mt-3 gy-4">
+          <div class="col-lg-6 ">
+            <div class="card p-4  flex-row gap-5">
+              <img src="../img/sec1-peg2/imgbig1.svg" alt="">
+              <div class="shirt-Content">
+                <div class="d-flex justify-content-between 
+                align-items-center">
+                    <h4>T-Shirt Summer Vibes</h4>
+                    <div class="price text-primary">
+                      $ <span id="priceNumber">9.20</span>USD
+                    </div>
+                </div>
+                <p class="text-par">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                  <div class="d-flex align-items-center gap-3 ">
+                    <form action="" class="d-flex align-items-center gap-2">
+                      <input class="form-control w-25 " type="number" name="count" id="count" value="1" min="1">
+                      <!-- <select class="form form-selectt" aria-label="Small select example">
+                        <option selected disabled > SIZE</option>
+                        <option value="1">S</option>
+                        <option value="2">M</option>
+                        <option value="3">L</option>
+                        <option value="3">XL</option>
+                        <option value="3">XXL</option>
+                        <option value="3">XXXL</option>
+                      </select> -->
+                      <button class="btnadd">Add to cart</button>
+                    </form>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card p-4 flex-row gap-5">
+              <img src="../img/sec1-peg2/img2.svg" alt="">
+              <div class="shirt-Content">
+                <div class="d-flex justify-content-between 
+                align-items-center">
+                    <h4>Basic Slim Fit T-Shirt</h4>
+                    <div class="price text-primary">
+                      $ <span id="priceNumber">10.00</span>USD
+                    </div>
+                </div>
+                <p class="text-par">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <div class="d-flex align-items-center gap-3 ">
+                  <form action="" class="d-flex align-items-center gap-2">
+                    <input class="form-control w-25 " type="number" name="count" id="count" value="1" min="1">
+                    <!-- <select class="form form-selectt" aria-label="Small select example">
+                      <option selected > SIZE</option>
+                      <option value="1">S</option>
+                      <option value="2">M</option>
+                      <option value="3">L</option>
+                      <option value="3">XL</option>
+                      <option value="3">XXL</option>
+                      <option value="3">XXXL</option>
+                    </select> -->
+                    <button class="btnadd">Add to cart</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card p-4 flex-row gap-5">
+              <img src="../img/sec1-peg2/img3.svg" alt="">
+              <div class="shirt-Content">
+                <div class="d-flex justify-content-between 
+                align-items-center">
+                    <h4> Fit T-Shirt</h4>
+                    <div class="price text-primary">
+                      $ <span id="priceNumber">8.00</span>USD
+                    </div>
+                </div>
+                <p class="text-par">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <div class="d-flex align-items-center gap-3 ">
+                  <form action="" class="d-flex align-items-center gap-2">
+                    <input class="form-control w-25 " type="number" name="count" id="count" value="1" min="1">
+                    <!-- <select class="form form-selectt" aria-label="Small select example">
+                      <option selected > SIZE</option>
+                      <option value="1">S</option>
+                      <option value="2">M</option>
+                      <option value="3">L</option>
+                      <option value="3">XL</option>
+                      <option value="3">XXL</option>
+                      <option value="3">XXXL</option>
+                    </select> -->
+                    <button class="btnadd">Add to cart</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="card p-4 flex-row gap-5">
+              <img src="../img/sec1-peg2/img4.svg" alt="">
+              <div class="shirt-Content">
+                <div class="d-flex justify-content-between 
+                align-items-center">
+                    <h4>hirt Summer</h4>
+                    <div class="price text-primary">
+                      $ <span id="priceNumber">9.99</span>USD
+                    </div>
+                </div>
+                <p class="text-par">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <div class="d-flex align-items-center gap-3 ">
+                  <form action="" class="d-flex align-items-center gap-2">
+                    <input class="form-control w-25 " type="number" name="count" id="count" value="1" min="1">
+                    <!-- <select class="form form-selectt" aria-label="Small select example">
+                      <option selected > SIZE</option>
+                      <option value="1">S</option>
+                      <option value="2">M</option>
+                      <option value="3">L</option>
+                      <option value="3">XL</option>
+                      <option value="3">XXL</option>
+                      <option value="3">XXXL</option>
+                    </select> -->
+                    <button class="btnadd">Add to cart</button>
+                  </form>
+                </div>
+                </div>
+            </div>
+          </div>
+
+    </div>
+
+
+    <!-- <div class="hero-shirt mt-5 row">
+      <div class="img smmall d-sm-block d-none d-xl-grid col-2 col-sm-2 col-lg-1 d-flex flex-column gap-2">
+            <img src="../img/sec1-peg2/imgbig1.svg" alt="img">
+            <img src="../img/sec1-peg2/img2.svg" alt="img">
+            <img src="../img/sec1-peg2/img3.svg" alt="img">
+            <img src="../img/sec1-peg2/img4.svg" alt="img">
+      </div>
+        <div class="img-big  d-sm-block d-none col-3  col-lg-5  ">
+          <img id="bigimg" src="../img/sec1-peg2/imgbig1.svg" alt="img">
+        </div>
+        <div class="swiper-sec2 d-block d-sm-none ">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class=" swiper-slide">
+                    <img src="../img/sec1-peg2/imgbig1.svg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class=" swiper-slide">
+                  <img src="../img/sec1-peg2/img2.svg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="swiper-slide ">
+                  <img src="../img/sec1-peg2/img3.svg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="swiper-slide ">
+                  <img src="../img/sec1-peg2/img4.svg" class="img-fluid rounded-start" alt="...">
+                </div>
+            </div>
+          <div class="swiper-pagination"></div>   
+          </div>
+          
+
+    </div>
+
+      <div class="color-text mt-5 mt-md-0 col-12 col-lg-4">
+        <div class="text1">
+          <p class="p1text" href="#">SALE</p>
+          <p class="p2text">T-Shirt Summer Vibes</p>
+          <span class="span1text">$89.99</span>
+          <span class="span2text">$119.99</span>
+        </div>
+        <div class="Color">
+          <p>Color:</p>
+
+          <div class="d-flex ">
+            <div class="div-color "><span class="span-color span1" value="../img/sec1-peg2/img2.svg"></span></div>
+            <div class="div-color"><span class="span-color span2" value="../img/sec1-peg2/img3.svg"></span></div>
+            <div class="div-color"><span class="span-color span3" value="../img/sec1-peg2/img4.svg"></span></div>
+            <div class="div-color"><span class="span-color span4" value="../img/sec1-peg2/imgbig1.svg "></span></div>
+          </div>
+         
+        </div>
+        <div class="Size">
+          <p>Size:</p>  
+          <select class="form-select form-select-sm" aria-label="Small select example">
+            <option selected> CHOOSE SIZE</option>
+            <option value="1">S</option>
+            <option value="2">M</option>
+            <option value="3">L</option>
+            <option value="3">XL</option>
+            <option value="3">XXL</option>
+            <option value="3">XXXL</option>
+          </select>
+        </div>
+        <div class="Quantity">
+          <p>Quantity:</p>
+          <div class="d-flex align-items-center gap-3 ">
+            <div class="wrapper "> 
+              <span class="minus">-</span>
+              <span class="px-3 num">1</span>
+              <span class="plus">+</span>
+            </div>
+            <button class="btnadd">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="Parq col-12 col-lg-2">
+        <p>Product ID: <br>
+          261311</p>
+        <p >H O U S E M Y B R A N D</p>
+      </div>
+    </div> -->
+   <!-- end hero-shirt -->
+   </div>
+</section>
+<!-- - Sec Shirt  -->
+
+<!-- + search icon -->
+  <form action="#" id="search-form">
+    <input type="search" placeholder="search here..." name="" id="search-box">
+    <label for="search-box" class=" fa-solid fa-magnifying-glass"></label>
+    <i class="fas fa-times" id="close"></i>
+    </form>
+<!-- - search icon -->
+
+<!-- + tab -->
+   <section class="tab">
+      <div class="tabs">
+        <button class="btntab tabActive">Description</button>
+        <button class="btntab">Reviews (2)</button>
+      </div>
+      <div class=" tabsContent">
+        <div id="Description" class="row tabContent  ">
+          <div class="col-12 col-md-6  div-1tab ">
+            <img class="py-5 m-auto d-block" src="../img/sec2-pag2/sec2-img1.png" alt="">
+            <h5 class="text-center pb-3">Details and product description</h5>
+            <p class="text-center">White Summer Vibes T-shirt in the uiKit line with a colorful print.
+                Made of jersey cotton. T-shirt fits perfectly with jeans, pants or shorts.</p>
+           </div>
+           <div class="col-12 col-md-6  div-2tab">
+            <img class=" py-5 m-auto d-block" src="../img/sec2-pag2/sec2-img2.png" alt="">
+                <div class="">
+                  <h5 class="text-center pb-3">Material(s) and care</h5>
+                <p class="p text-center">Body: 98% COTTON - 2% ELASTANE</p>
+                <img  class="m-auto d-block" src="../img/sec2-pag2/sec2-img3.png" alt="">
+           </div>
+            </div>
+        </div>
+
+        <div id="Reviews" class="row tabContent hid">
+          <div class="Rev col-12 col-lg-6 mt-5 mt-md-1"">
+            <div class="Reviews d-flex gap-1  gap-md-2 gap-lg-3  flex-wrap ">
+                <div class="">
+                  <h5>4.5</h5>
+                  <img src="../img/sec2-pag2/star.png" alt="star">
+                  <img src="../img/sec2-pag2/star.png" alt="star">
+                  <img src="../img/sec2-pag2/star.png" alt="star">
+                  <img src="../img/sec2-pag2/star.png" alt="star">
+                  <img src="../img/sec2-pag2/nounStar.png" alt="star">
+                  <div class="iconP">
+                    <i class="fa-regular fa-user"></i>
+                    <p>81 all opinions</p>
+                  </div>
+                </div>
+              <div class="mt-3">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="d-flex align-items-center justify-content-center gap-2">
+                    <img src="../img/sec2-pag2/star.png" alt="star">
+                    <span>1</span>
+                  </div>
+                  <div class="spana">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="d-flex align-items-center justify-content-center gap-2">
+                    <img src="../img/sec2-pag2/star.png" alt="star">
+                    <span>2</span>
+                  </div>
+                  <div class="spana">
+                    <span></span>
+                  </div>
+                </div>
+                <div class=" d-flex align-items-center gap-2">
+                  <div class="d-flex align-items-center justify-content-center gap-2">
+                    <img src="../img/sec2-pag2/star.png" alt="star">
+                    <span>3</span>
+                  </div>
+                  <div class="spana">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="d-flex align-items-center justify-content-center gap-2">
+                    <img src="../img/sec2-pag2/star.png" alt="star">
+                    <span>4</span>
+                  </div>
+                  <div class="spana">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="d-flex align-items-center justify-content-center gap-2">
+                    <img src="../img/sec2-pag2/star.png" alt="star">
+                    <span>5</span>
+                  </div>
+                  <div class="spana">
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="ADD ">ADD OPINION</button>
+          </div>
+
+          <div class=" col-12 col-lg-6">
+            <div class="div-rev2 d-flex ">
+              <img class="img-person" src="../img/sec2-pag2/img1.png" alt="person-img">
+              <div class="text-rev">
+                <h4>John Doe</h4>
+                <img src="../img/sec2-pag2/star.png" alt="star">
+                <img src="../img/sec2-pag2/star.png" alt="star">
+                <img src="../img/sec2-pag2/star.png" alt="star">
+                <img src="../img/sec2-pag2/star.png" alt="star">
+                <img src="../img/sec2-pag2/nounStar.png" alt="star">
+  
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has <br>
+                   been the industry's standard dummy text ever since the 1500s</p>
+              </div>
+            </div>
+            <div class="div-rev2 d-flex ">
+              <img class="img-person" src="../img/sec2-pag2/img2.png" alt="person-img">
+              <div class="text-rev">
+                <h4>Eveline Gosok</h4>
+                <img src="../img/sec2-pag2/star.png" alt="star">
+                <img src="../img/sec2-pag2/star.png" alt="star">
+                <img src="../img/sec2-pag2/star.png" alt="star">
+                <img src="../img/sec2-pag2/star.png" alt="star">
+                <img src="../img/sec2-pag2/nounStar.png" alt="star">
+  
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has <br>
+                   been the industry's standard dummy text ever since the 1500s</p>
+              </div>
+            </div>
+            <div class="div-rev2 d-flex ">
+              <img class="img-person" src="../img/sec2-pag2/img3.png" alt="person-img">
+              <div class="text-rev">
+                <h4>Anne Okombo</h4>
+                <img src="../img/sec2-pag2/star.png" alt="star">
+                <img src="../img/sec2-pag2/star.png" alt="star">
+                <img src="../img/sec2-pag2/star.png" alt="star">
+                <img src="../img/sec2-pag2/star.png" alt="star">
+                <img src="../img/sec2-pag2/nounStar.png" alt="star">
+  
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has <br>
+                   been the industry's standard dummy text ever since the 1500s</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+   </section>
+<!-- - tab -->
+  
+ <!-- + card -->
+     <div class="cards mb-5">
+        <div class="container">
+          <div class="textCardhead">
+              <p class="text-black">Selected just for you</p>
+              <button class="btn-show">Show more</button>
+          </div>
+       
+          <div class="row gx-0 ">
+            <div class="card " style="width: 15rem;">
+               <a href="index.html"> 
+                <img src="../img/sec3/img1.png" class="card-img-top" alt="...">
+              </a>
+                <div class="num">30</div>
+                <div class="card-body">
+                  <p class="card-text">T-Shirt Summer Vibes</p>
+                  <span style="color: #FF0000; ">$89.99</span>
+                  <span class=" text-secondary opacity-50" >$119.99</span>
+                </div>
+              </div>
+              <div class="card" style="width: 15rem;">
+                <a href="index.html"> 
+                <img src="../img/sec3/img2.png" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <p class="card-text">Loose Knit 3/4 Sleeve</p>
+                  <span>$119.99</span>
+                </div>
+              </div>
+              <div class="card" style="width: 15rem;">
+                <a href="index.html"> 
+                <img src="../img/sec3/img3.png" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <p class="card-text">Basic Slim Fit T-Shirt</p>
+                  <span >$79.99</span>
+                </div>
+              </div>
+              <div class="card" style="width: 15rem;">
+                <a href="index.html"> 
+                <img src="../img/sec3/img4.png" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <p class="card-text">Loose Textured T-Shirt</p>
+                  <span>$119.99</span>
+                </div>
+              </div>
+        </div>
+        </div>
+     </div>
+ <!-- - card -->
+
+<!-- + content text -->
+     <section class="content text-white">
+            <div class="container">
+             <div class="row">
+              <h3 class=" col-md-6">
+                Subscribe to our newsletter and
+                receive exclusive offers every week
+              </h3>
+              <div class="form col-md-6">
+                <input type="email" placeholder="Enter your email">
+                <button class="btn send ms-3">Send</button>
+              </div>
+             </div>
+            </div>
+  
+  
+    </section>
+<!-- - content text -->
+
+<!-- + footer -->
+<footer class="text-dark">
+  <div class="my-5 container">
+    <div class="row g-0">
+      <div class="div-footer div-logo col-12 col-md-12 col-lg-6">
+        <img class="img1" src="../img/sec1/logo-sm.png" alt="img-logo">
+        <span class=" py-3 span"> <span class="spanE">E-</span>Shop</span>
+        <p class="py-3">House My Brand designs clothing for the young, the old &
+          everyone in between – but most importantly, for the fashionable</p>     
+        <div class="icon py-3">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+       </div>
+
+
+       
+      <div class="col col-md-4 col-lg-2 text-dark">
+          <h5>Shopping online</h5>
+          <h6>Order Status</h6>
+          <h6>Shipping and Delivery</h6>
+          <h6>Returns</h6>
+          <h6>Payment Options</h6>
+          <h6>Contact Us</h6>
+       </div>
+     
+       <div class="col col-md-4 col-lg-2  text-dark ">
+        <h5>Information</h5>
+        <h6> Gift Cards</h6>
+        <h6> Find a store</h6>
+        <h6> Newsletter</h6>
+        <h6>Bacome a member</h6>
+        <h6>Site feedback</h6>
+     </div>
+     
+   
+     <div class="col col-md-4 col-lg-2  text-dark">
+      <h5>Contact</h5>
+      <h6>store@uikit.com</h6>
+      <h6>Hotline: +1 131 138 138</h6>
+   </div>
+    </div>
+  </div>
+
+
+  <div class="p">
+        <p>DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.</p>
+ </div>
+</footer>
+<!-- -footer -->
+
+<!-- + loginScreen -->
+<section class="loginScreen  d-none forms text-black">
+  <button id="closeLogin" class="btn ">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+  <div class="form login ">
+    <div class="form-content">
+<header>Login</header>
+<p>Lorem Ipsum is simply dummy text of the <br> printing </p>
+<form action="#">
+  <div class="field input-field">
+    <input type="email" placeholder="E-mail" class="input">
+  </div>
+  <div class="field input-field">
+    <input type="password" placeholder="Password" class="password">
+    <i class="fa-regular fa-eye-slash eye-icon"></i>
+  </div>
+
+  <div class="form-link linkfog ">
+    <div><input type="checkbox"> <span>Keep me signed in</span></div>
+    <a href="#" class="forgot-pass linkfg">Forgot password?</a>
+  </div>
+
+  <div class="socail">
+    <div class="media-options">
+      <a href="#" class="field facebook">
+        <i class="fa-brands fa-facebook-f facebook-icon"></i>
+        <span>Facebook</span>
+      </a>
+    </div>
+
+    <div class="media-options">
+      <a href="#" class="field gmail">
+        <i class="fa-thin fa-envelope gmail-icon"></i>
+        <span>Gmail</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="field button-field">
+    <button>Sign in</button>
+  </div>
+  
+  <div class="form-link">
+    <span>Not a member yet?<a href="#" class="link signup-link">Sign up</a> </span>
+  </div>
+</form>
+</div>
+<!-- <div class="line"></div> -->
+
+</div>
+
+<!-- Signup Form -->
+
+<div class="form signup ">
+<div class="form-content">
+<header>
+  Create an account and <br>
+  discover the benefits
+</header>
+<p>Lorem Ipsum is simply dummy text of the <br>
+   printing and typesetting industry. Lorem <br>
+    Ipsum has been the industry's standard</p>
+<form action="#">
+  <div class="field input-field">
+    <input type="text" placeholder="First Name" class="input">
+  </div>
+  <div class="field input-field">
+    <input type="text" placeholder="Last Name" class="input">
+  </div>
+  <div class="field input-field">
+    <input type="email" placeholder="Email" class="input">
+  </div>
+  <div class="field input-field">
+    <input type="password" placeholder="Password" class="password">
+    <i class="fa-regular fa-eye-slash eye-icon"></i>
+
+  </div>
+
+  <div class="form-link linkfog ">
+    <div><input type="checkbox"> 
+      <span class="check-span2">I agree to the Google Terms of Service and <br>
+      Privacy Policy</span>
+    </div>
+  </div>
+
+  <div class="field button-field">
+    <button>Sign in</button>
+  </div>
+  
+  <div class="form-link">
+    <span>Are you already a member? <a href="#" class="link signup-link">Sign up</a> </span>
+
+  </div>
+</form>
+</div>
+<!-- <div class="line"></div> -->
+
+</div>
+
+<!-- Forgot password -->
+<div class="form forgot h-75 ">
+<div class="form-content ">
+<header>Forgot your password?</header>
+<p>Enter your email or phone number  <br>
+  and recover your account </p>
+<form action="#">
+  <div class="field input-field">
+    <input type="email" placeholder="Email" class="input">
+  </div>
+  <div class="line"></div>
+
+  <div class="d-flex field input-field">
+    <input class="w-25" type="number">
+    <input  type="text" placeholder="Phone number" class="input w-75">
+  </div>
+  
+
+  <div class="field button-field">
+    <button>Reset password</button>
+  </div>
+  
+  <div class="form-link">
+    <span><a href="#" class="link signup-link">back</a> </span>
+  </div>
+</form>
+</div>
+</div>
+
+</section>
+<!-- - loginScreen -->
+
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-top  mt-5 " tabindex="-1" id="shirtList" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title mt-5" id="offcanvasTopLabelb">Shopping Cart</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+
+  </div>
+  <div class="offcanvas-footer py-3 pb-5 border-top text-center">
+    <h5>
+      Total cost: <span class="total "></span> $
+    </h5>
+    <button onclick="deletALLshit()" class="deletALLbtn">Delet ALL shirt in list </button>
+  </div>
+</div>
+<!-- offcanvas -->
+
+<!-- + go up -->
+<button id="goup" class="d-none ">
+  <i class="fa-solid fa-arrow-turn-up"></i>
+</button>
+<!-- - go up -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/mains.js"></script>
+<script src="../js/cart.js"></script>
+</body>
+</html>
+

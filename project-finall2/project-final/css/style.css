@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import'header/style.css';
+@import'men/style.css';
+@import url(sec-hero1/style.css);
+@import url(secimg2/style.css);
+@import url(sec-card3/style.css);
+@import url(cardText4/style.css);
+@import url(contact6/style.css);
+@import 'footer/style.css';
+@import'loginScreen/style.css';
+@import'tab-pag2/style.css';
+@import'sec-shirt/style.css';
+
+
+
+* {
+    margin: 0;padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+    scroll-behavior: smooth;
+}
+a {
+    /* display: block; */
+    text-decoration: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.offcanvas{
+    transition: 1s;
+    /* scroll-margin-block: unset; */
+    height: 100vh !important;
+}
+.offcanvas-body {
+    flex-grow: 1;
+    padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+    overflow-y:auto ;
+}
+
+.sec-hero , .sec2-hero , .sec3-hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.349),rgba(0, 0, 0, 0.336) , rgba(0, 0, 0, 0.301)), url(../img/sec1/img-hero.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    animation: fadeIn .4s linear;
+}
+@keyframes fadeIn {
+    0% {
+     opacity: 0.8;
+    /* transform: translateY(-30px); */
+    }
+}
+.sec2-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.349),rgba(0, 0, 0, 0.336) , rgba(0, 0, 0, 0.301)), url(../img/sec1/photo-hero2.jpg);
+    background-position: 0% 15%;
+}
+.sec3-hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.349),rgba(0, 0, 0, 0.336) , rgba(0, 0, 0, 0.301)), url(../img/sec1/photo-hero3.avif);
+    background-position: center 10%;
+
+}
+.content {
+    height: 50vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.349),rgba(0, 0, 0, 0.336) , rgba(0, 0, 0, 0.301)), url(../img/sec6/img1.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+#fist {
+    display: flex;
+}
+.div-tab {
+    width: 500px;
+}
+.div-tab h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+.div-tab p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+ul li .active {
+    background-color: #fff !important;
+    border: 1px solid #FBB03B !important;
+    color: black !important;
+}
+.nav-pills .nav-link {
+    color: black;
+}
+
+
+
+
+/* 
+section.tab {
+    width: 65%;
+    margin: 6.5rem auto 0;
+    color: black;
+} 
+.tabs{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+.tabs li {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #263238;
+    cursor: pointer;
+    position: relative;
+}
+.tabs li::after {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    left: -5%;
+    width: 0%;
+    height: 4px;
+    background-color: #263238;
+    border-radius: 30px;
+}
+.tabs li.active::after {
+    width: 105%;
+} */
+
+/* .conttents.active{
+    display: block;
+} */

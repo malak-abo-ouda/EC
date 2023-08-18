@@ -1,0 +1,133 @@
+@media (max-width : 992px){
+    .header{
+        justify-content:space-between;
+        align-items: center;
+        position: fixed;
+        padding: 1rem 3rem;  
+        z-index:9999 ;
+    }
+.sec-hero h1 {
+    text-align: center;
+}
+.sec-hero .content-hero {
+    display: flex;
+    margin-left: 0;
+    width: fit-content;
+    height: 70vh;
+    margin-left: 40px;
+    justify-content: end;
+}
+
+.div-logo span , .header .icon-head  {
+    color: #000000;
+}
+
+    .sec-hero{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.349),rgba(0, 0, 0, 0.336) , rgba(0, 0, 0, 0.301)), url(../img/sec1/sm.png);
+       background-size: cover;
+    }
+    .div-freeShip , .icon-hero i ,  #carouselExampleIndicators{
+        display: none;
+    }
+
+
+    .cards .textCardhead p{
+        font-size: 19px;
+        font-weight: 300;
+    }
+    .cards .textCardhead .btn-show{
+        border-radius: 40px;
+        font-size: 12px;
+        padding:   0.5rem 0.5rem;
+    }
+
+    .content .container  .form input {
+        padding: 0.4rem 1rem ;
+    }
+    .content .container  .form .send {
+        padding: 0.4rem 1rem ;
+    }
+
+    
+    .div-tab {
+        width: 300px;
+    }
+
+    
+}
+
+
+@media (main-width : 400px) ,(max-width : 792px){
+    .content .container {
+        display: block;
+        padding-top:100px ;
+    }
+    .content .container  .form input {
+        margin-top: 20px;
+        padding: 0.4rem 1rem ;
+    }
+    .content .container  .form .send {
+        padding: 0.4rem 1rem ;
+    }
+    .card-imgg{
+        display: none;
+    }
+
+    #fist {
+        display: block;
+        align-items: center;
+
+    }
+    .div-tab {
+        width: 100%;
+    }
+    #search-form #search-box {
+    width: 15rem;
+    }
+
+    footer .div-footer p{
+        width: 300px;
+    
+    }
+    .loginScreen .form {
+        max-width: 350px;
+    }
+    .media-options a {
+        width: 140px !important;
+    }
+    #goup {
+        display: none;
+    }
+    #user {
+        display: none;
+    }
+}
+
+
+@media (max-width : 382px){
+    .div-logo img {
+        width: 2rem;
+    }
+    .div-logo span{
+        font-size: 0.8rem;
+    }
+    .icon-head .nav-item  {
+        font-size: 0.8rem;
+        
+    }
+    .bar{
+        width: 15px;
+    }
+}
+@media (max-width : 335px){
+    .div-logo img {
+        width: 1.5rem;
+    }
+    .sec-hero h1 {
+        width: 100%;
+        font-size: 2rem !important;
+    }
+    footer .div-footer p {
+        width: 100%;
+    }
+}

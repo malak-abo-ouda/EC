@@ -1,0 +1,43 @@
+.section-men .div-men div h5 {
+    font-size: 600;
+    font-weight: 600;
+}
+.section-men .div-men div a {
+    display: block;
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+    transition: 0.7s;
+    margin-top: 4px;
+}
+.section-men .div-men div a:hover {
+    text-decoration: underline;
+    color: #FBB03B;
+    font-weight: 600;
+}
+.section-men{
+    clip-path: polygon(0 0 , 100% 0 , 0 0);
+    position: absolute;
+    top: 7.5vh;
+    left: 0;
+    width: 100%;
+    padding: 2rem 1rem;
+    transition: 1s;
+}
+.section-men.acttive {
+    clip-path: polygon(0 0 , 100% 0 ,100% 100% , 0 100%);
+    transform: translateY(15px) ;
+}
+
+
+#a-men{
+    position: relative;
+}
+#closeMen{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    right: 3%;
+    top: 0;
+    
+}

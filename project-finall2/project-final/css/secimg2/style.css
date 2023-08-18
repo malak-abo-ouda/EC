@@ -1,0 +1,96 @@
+
+.container .cards {
+    display: flex;
+    position: relative;
+}
+.container .cards .cardd {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    transition: 0.7s;
+    margin-left: 10px;
+}
+.container .cards .cardd img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.cardd.active {
+    flex-grow: 1;
+}
+.container .cards .cardd  .div-text{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+.cardd.active h4 {
+    display: block;
+}
+.cardd h4 {
+    width: 200px;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 25px;
+    padding: 0.5rem 0.5rem;
+}
+
+.container .cards .cardd .div-text .btnim{
+    border: none;
+    border-radius: 20px;
+    padding: 0.4rem 0.7rem ;
+    transition: 0.5s;
+    border: 1px solid #ffffff;
+}
+.container .cards .cardd .div-text .btnim:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #505050;
+}
+
+
+/* .container .color {
+    width: 480px;
+    height: 300px;
+    background-color: #5757578f;
+    position: absolute;
+    top: 117%;
+} */
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom,8px);
+    top: var(--swiper-pagination-top,auto);
+    margin: auto;
+    display: block;
+    left: 40%;
+    bottom: -2%;
+    width: fit-content;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap,4px);
+    background: rgb(255, 255, 255);
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    width: fit-content;
+    bottom: 0%;
+    left: -55%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 50px;
+    height: 3px;
+    padding: 0;
+    margin-right: 0px;
+    margin-left: 0px;
+}

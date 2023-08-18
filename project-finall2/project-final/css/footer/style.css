@@ -1,0 +1,66 @@
+footer .div-footer p{
+    color: #C5C5C5;
+    font-size: 13px;
+    font-weight: 400px;
+    line-height: 25px;
+    width: 430px;
+
+}
+footer .div-footer .spanE {
+    color: #FBB03B;
+}
+footer .div-footer .span {
+   font-size: 19px ;
+   font-weight: 400;
+}
+
+
+footer .icon i {
+    margin-right: 10px;
+    color: #C5C5C5;
+    transition: all ease  0.7s!important;
+}
+footer .icon i:hover{
+    cursor : pointer !important;
+    transform: scale(1.6 ) translateY(-10px);
+
+    -webkit-transform:scale (1,8) rotate(-7deg)!important;
+    transition: all ease  0.3s!important;
+}
+footer .icon i:nth-child(1):hover{
+    color: blue;
+}
+footer .icon i:nth-child(2):hover{
+    color: rgb(137, 137, 255);
+}
+footer .icon i:nth-child(2):hover{
+    color: rgb(137, 137, 255);
+}
+footer .icon i:nth-child(3):hover{
+    color: rgb(53, 53, 53);
+}
+footer .icon i:nth-child(4):hover{
+    color: rgb(255, 96, 96);
+}
+footer .icon i:nth-child(5):hover{
+    color: rgb(255, 0, 0);
+}
+footer h5 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+footer h6 {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+footer .p {
+    box-shadow: 0 0 5px #C5C5C5;
+   padding:1rem 1rem 0.6rem;
+   text-align: center;
+   color: #AEAEAE;
+}
+
+

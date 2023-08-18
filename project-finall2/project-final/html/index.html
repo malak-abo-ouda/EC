@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- fontawesome style css  -->
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+     <!--  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- My css style -->
+    <link rel="stylesheet" href="../css/style.css">
+     <!-- my responsev style css -->
+     <link rel="stylesheet" href="../css/respon.css">
+    <title>Ec</title>
+</head>
+<body>
+ <!-- - header -->
+      <header class="header container-fluid ">
+        <div class="div-logo">
+                <img class="img1" src="../img/sec1/logo.png" alt="img-logo">
+                <span>E-Shop</span>
+        </div>
+        <nav class="navbar nav-menu" >
+                <a id="a-men" class="nav-link" aria-current="page" href="#">Men</a>
+                <a class="nav-link" href="#">Women</a>
+                <a class="nav-link" href="#">Kids</a>
+                <a href="#" class="d-none" id="login-btn" >
+                  <button  class="btn w-25 bg-danger  ">login</button>
+                </a>
+        </nav>
+        <div class="icon-head d-flex">
+
+          <div class="nav-item">
+            <a class="nav-link" href="#">
+              <i class=" fa-solid fa-magnifying-glass" id="search-icon"></i>
+            </a>
+          </div>
+         <div class="nav-item">
+          <a class="nav-link cartBtn" href="#">
+            <i class=" fa-regular fa-cart-shopping" data-bs-toggle="offcanvas" data-bs-target="#shirtList" aria-controls="offcanvasTop"></i>
+            <div class="number">0</div>
+          </a>
+         </div>
+         <div class="nav-item">
+          <a class="nav-link" href="#">
+            <i id="user" class="fa-regular fa-user"></i>
+          </a>
+        </div>
+  
+            <div class="list">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+      </div>
+      <div class="bg-white text-black section-men">
+        <div class="container">
+          <div class="row div-men">
+            <button id="closeMen" class="btn">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="col-6 col-md-3 ">
+              <h5>Sale</h5>
+              <a href="#">Bestsellers</a>
+              <a href="#">Latest Arrivals</a>
+            </div>
+            <div class="col-6 col-md-3 ">
+              <h5>Shoes</h5>
+              <a href="#">Lifestyle</a>
+              <a href="#">Running</a>
+              <a href="#">Soccer</a>
+              <a href="#">Basketball</a>
+              <a href="#">Football</a>
+              <a href="#">Golf</a>
+              <a href="#">Baseball</a>
+            </div>
+            <div class="col-6 col-md-3">
+              <h5>Clothing</h5>
+              <a href="#">Pants</a>
+              <a href="#">Hoodies & Sweatshirts</a>
+              <a href="#">Jackets & Vests</a>
+              <a href="#">Track Suits</a>
+              <a href="#">Short Sleeve Shirts</a>
+              <a href="#">T-Shirts</a>
+              <a href="#">Jerseys</a>
+              <a href="#">Shorts</a>
+              <a href="#">Jeans</a>
+            </div>
+            <div class="col-6 col-md-3 ">
+              <h5>Accesorries</h5>
+              <a href="#">Backpacks</a>
+              <a href="#">Caps & Hats</a>
+              <a href="#">Watches</a>
+              <a href="#">Belts</a>
+              <a href="#">Bags</a>
+              <a href="#">Wallets & Cases</a>
+              <a href="#">Scarves</a>
+              <a href="#">Glasses</a>
+            </div>
+          </div>
+      
+        </div>     
+      </div>
+      </header>
+ <!-- + header -->
+
+ <!-- + search icon -->
+      <form action="#" id="search-form">
+      <input type="search" placeholder="search here..." name="" id="search-box">
+      <label for="search-box" class=" fa-solid fa-magnifying-glass"></label>
+      <i class="fas fa-times" id="close"></i>
+      </form>
+<!-- - search icon -->
+
+<!-- + sec-hero1 -->
+      <section class="sec-hero slide-container active">
+        <div class="container">
+          <div class="content-hero">
+            <h1 >Sale of the <br>
+              summer  <br>
+              collection</h1>      
+              <div class="shop d-flex align-items-center " >
+                <i class="fa-regular fa-arrow-right"></i>
+                <h5>Shop now</h5>
+              </div>
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators" style="transform: rotate(90deg);">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+              </div>
+               
+           </div>
+        </div>
+        <div class="d-flex">
+          <div class="div-freeShip row g-0 bg-white text-black w-75 ">
+            <div class=" col  d-flex align-items-center">
+                <i class="fa-regular fa-car-side "></i>             
+                   <div class="text">
+                    <h5>Free Shipping</h5>
+                    <p class="text-secondary">On purchases over $199</p>
+                   </div>
+            </div>
+            <div class="col d-flex align-items-center">
+                <i class="fa-regular fa-face-smile-beam"></i>          
+                <div class="text">
+                    <h5>99% Satisfied Customers</h5>
+                    <p class="text-secondary">
+                        Our clients' opinions <br> 
+                        speak for themselves
+                    </p>
+                   </div>
+            </div>
+            <div class="col d-flex align-items-center">
+                <i class="fa-regular fa-car-side "></i>             
+                   <div class="text">
+                    <h5>Originality Guaranteed</h5>
+                    <p class="text-secondary">
+                        30 days warranty for each 
+                        product from our store</p>
+                   </div>
+            </div>
+
+          </div>
+          <div class="icon-hero">
+            <i class="fa-regular fa-arrow-left" onclick="next()"></i>
+            <i class="fa-regular fa-arrow-right" onclick="prev()"></i>
+          </div>
+          
+          
+
+        </div>
+      </section>
+      <section class="sec-hero sec2-hero slide-container">
+        <div class="container">
+          <div class="content-hero">
+            <h1 >Sale of the <br>
+              summer  <br>
+              collection</h1>      
+              <div class="shop d-flex align-items-center " >
+                <i class="fa-regular fa-arrow-right"></i>
+                <h5>Shop now</h5>
+              </div>
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators" style="transform: rotate(90deg);">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+              </div>
+               
+           </div>
+        </div>
+        <div class="d-flex">
+          <div class="div-freeShip row g-0 bg-white text-black w-75 ">
+            <div class=" col  d-flex align-items-center">
+                <i class="fa-regular fa-car-side "></i>             
+                   <div class="text">
+                    <h5>Free Shipping</h5>
+                    <p class="text-secondary">On purchases over $199</p>
+                   </div>
+            </div>
+            <div class="col d-flex align-items-center">
+                <i class="fa-regular fa-face-smile-beam"></i>          
+                <div class="text">
+                    <h5>99% Satisfied Customers</h5>
+                    <p class="text-secondary">
+                        Our clients' opinions <br> 
+                        speak for themselves
+                    </p>
+                   </div>
+            </div>
+            <div class="col d-flex align-items-center">
+                <i class="fa-regular fa-car-side "></i>             
+                   <div class="text">
+                    <h5>Originality Guaranteed</h5>
+                    <p class="text-secondary">
+                        30 days warranty for each 
+                        product from our store</p>
+                   </div>
+            </div>
+
+          </div>
+          <div class="icon-hero">
+            <i class="fa-regular fa-arrow-left" onclick="next()"></i>
+            <i class="fa-regular fa-arrow-right" onclick="prev()"></i>
+          </div>
+          
+          
+
+        </div>
+      </section>
+      <section class="sec-hero sec3-hero slide-container">
+        <div class="container">
+          <div class="content-hero">
+            <h1 >Sale of the <br>
+              summer  <br>
+              collection</h1>      
+              <div class="shop d-flex align-items-center " >
+                <i class="fa-regular fa-arrow-right"></i>
+                <h5>Shop now</h5>
+              </div>
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators" style="transform: rotate(90deg);">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+              </div>
+               
+           </div>
+        </div>
+        <div class="d-flex">
+          <div class="div-freeShip row g-0 bg-white text-black w-75 ">
+            <div class=" col  d-flex align-items-center">
+                <i class="fa-regular fa-car-side "></i>             
+                   <div class="text">
+                    <h5>Free Shipping</h5>
+                    <p class="text-secondary">On purchases over $199</p>
+                   </div>
+            </div>
+            <div class="col d-flex align-items-center">
+                <i class="fa-regular fa-face-smile-beam"></i>          
+                <div class="text">
+                    <h5>99% Satisfied Customers</h5>
+                    <p class="text-secondary">
+                        Our clients' opinions <br> 
+                        speak for themselves
+                    </p>
+                   </div>
+            </div>
+            <div class="col d-flex align-items-center">
+                <i class="fa-regular fa-car-side "></i>             
+                   <div class="text">
+                    <h5>Originality Guaranteed</h5>
+                    <p class="text-secondary">
+                        30 days warranty for each 
+                        product from our store</p>
+                   </div>
+            </div>
+
+          </div>
+          <div class="icon-hero">
+            <i class="fa-regular fa-arrow-left" onclick="next()"></i>
+            <i class="fa-regular fa-arrow-right" onclick="prev()"></i>
+          </div>
+          
+          
+
+        </div>
+      </section>
+<!-- - sec-hero1 -->
+
+<!-- + sec img 2 -->
+       <div class="card-imgg container">
+        <div class="cards row">
+        <div class="col-12 col-md-6 col-lg-4   cardd active " >
+              <img src="../img/sec2/img1.png" alt="" id="bigimg">
+            <div class="div-text">
+              <h4 class="contnet active">New arrivals <br>
+                are now in!</h4>
+                <button class="btnim" >Show collection</button>
+            </div>
+        </div>
+        <div class="col-12 my-4 m-md-0 col-md-6  col-lg-4  cardd ">
+              <img src="../img/sec2/img2.png" alt="" id="img1">
+              <div class="div-text">
+                <h4 class="contnet">Basic t-shirts <br>
+                  $29,99</h4>
+                  <button class="btnim">More details</button>
+              </div>
+        </div>
+        <div class="col-12  col-md-6  mt-md-4 m-lg-0 col-lg-4   cardd ">
+              <img src="../img/sec2/img3.png" alt="" id="img2">
+              <div class="div-text">
+                <h4 class="contnet">Sale this  <br>
+                  summer</h4>
+                  <button class="btnim">VIEW ALL</button>
+              </div>
+           </div>
+        </div>
+        <div class="color"></div>
+       </div>
+<!-- - sec img 2 -->
+
+<!-- + Slider main container -->
+<div style=" width: 85% ; margin: auto;" class="swiper cards mt-5">
+  <div class="textCardhead">
+    <p class="text-black">Selected just for you</p>
+    <button class="btn-show">Show more</button>
+</div>
+  <!-- Additional required wrapper -->
+  <div style="width: 85% ;" class="swiper-wrapper w-75 ">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <div class="card" style="width: 15rem;">
+        <a href="index2.html"> 
+          <img src="../img/sec3/img1.png" class="card-img-top" alt="...">
+        </a>
+        <div class="num">30</div>
+        <div class="card-body">
+          <p class="card-text">T-Shirt Summer Vibes</p>
+          <span style="color: #FF0000; ">$89.99</span>
+          <span class=" text-secondary opacity-50" >$119.99</span>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="card" style="width: 15rem;">
+        <a href="index2.html"> 
+        <img src="../img/sec3/img2.png" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+          <p class="card-text">Loose Knit 3/4 Sleeve</p>
+          <span>$119.99</span>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="card" style="width: 15rem;">
+        <a href="index2.html"> 
+        <img src="../img/sec3/img3.png" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+          <p class="card-text">Basic Slim Fit T-Shirt</p>
+          <span >$79.99</span>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="card" style="width: 15rem;">
+        <a href="index2.html"> 
+        <img src="../img/sec3/img4.png" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+          <p class="card-text">Loose Textured T-Shirt</p>
+          <span>$119.99</span>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="card" style="width: 15rem;">
+        <a href="index2.html"> 
+          <img src="../img/sec3/img1.png" class="card-img-top" alt="...">
+        </a>
+        <!-- <div class="num">30</div> -->
+        <div class="card-body">
+          <p class="card-text">T-Shirt Summer Vibes</p>
+          <span style="color: #FF0000; ">$89.99</span>
+          <span class=" text-secondary opacity-50" >$119.99</span>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="card" style="width: 15rem;">
+        <a href="index2.html"> 
+        <img src="../img/sec3/img2.png" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+          <p class="card-text">Loose Knit 3/4 Sleeve</p>
+          <span>$119.99</span>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="card" style="width: 15rem;">
+        <a href="index2.html"> 
+        <img src="../img/sec3/img3.png" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+          <p class="card-text">Basic Slim Fit T-Shirt</p>
+          <span >$79.99</span>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="card" style="width: 15rem;">
+        <a href="index2.html"> 
+        <img src="../img/sec3/img4.png" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+          <p class="card-text">Loose Textured T-Shirt</p>
+          <span>$119.99</span>
+        </div>
+      </div>
+    </div>
+  </div>   
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev "></div>
+  <div class="swiper-button-next"></div>
+</div>
+<!-- - Slider main container -->
+
+<!-- - cards text 4 -->
+      <div class="cards">
+        <div class="container">
+            <div class="textCardhead">
+                <h5 class="text-black m-auto mb-5">Why should you choose us?</h5>
+              </div>
+            <div class="row">
+                <div class="card" style="width: 17rem;">
+                    <div class="card-body ">
+                     <i class="fa-regular fa-car-side "></i>   
+                     <h5 class="card-title">Free Shipping</h5>
+                      <p class="card-text">
+                        All purchases over $199 are eligible for
+                        free shipping via USPS First Class Mail.</p>
+                   
+                    </div>
+                  </div>
+            
+                  <div class="card" style="width: 17rem;">
+                    <div class="card-body ">
+                        <i class="fa-regular fa-money-check-dollar-pen"></i>
+                      <h5 class="card-title">Easy Payments</h5>
+                      <p class="card-text">
+                        All payments are processed instantly
+                        over a secure payment protocol.</p>
+                   
+                    </div>
+                  </div>
+                  
+                  <div class="card" style="width: 17rem;">
+                    <div class="card-body ">
+                        <i class="fa-regular fa-circle-dollar"></i>
+                      <h5 class="card-title">Money-Back Guarantee</h5>
+                      <p class="card-text">
+                        If an item arrived damaged or you've
+                        changed your mind, you can send it
+                        back for a full refund.</p>
+                    </div>
+                  </div>
+            
+                  <div class="card" style="width: 17rem;">
+                    <div class="card-body ">
+                        <i class="fa-solid fa-clone"></i>    
+                      <h5 class="card-title">Finest Quality</h5>
+                      <p class="card-text">
+                        Designed to last, each of our products has
+                        been crafted with the finest materials.</p>
+                    </div>
+                  </div>
+            
+            </div>
+        </div>
+      </div>
+<!-- + cards text 4 -->
+
+<!-- + Products card 5 -->
+      <div class="cards ">
+        <div class="container">
+          <div class="textCardhead">
+            <h5 class="text-black m-auto mb-5">Products in today</h5>
+          </div>
+          <div class="row gx-0 ">
+            <div class="card  animate__animated  animate__backInLeft animate__delay-2s" style="width: 15rem;">
+                <img src="../img/sec3/img3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Basic Slim Fit T-Shirt</p>
+                  <span >$79.99</span>
+                </div>
+              </div>
+              <div class="card animate__animated  animate__backInLeft animate__delay-3s" style="width: 15rem;">
+                <img src="../img/sec3/img4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Loose Textured T-Shirt</p>
+                  <span>$119.99</span>
+                </div>
+              </div>
+                <div class="card animate__animated  animate__backInLeft animate__delay-4s " style="width: 15rem;">
+                    <img src="../img/sec3/img1.png" class="card-img-top" alt="...">
+                    <div class="num">30</div>
+                    <div class="card-body">
+                      <p class="card-text">T-Shirt Summer Vibes</p>
+                      <span style="color: #FF0000; ">$89.99</span>
+                      <span class=" text-secondary opacity-50" >$119.99</span>
+                    </div>
+                  </div>
+                  <div class="card animate__animated  animate__backInLeft animate__delay-5s" style="width: 15rem;">
+                    <img src="../img/sec3/img2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Loose Knit 3/4 Sleeve</p>
+                      <span>$119.99</span>
+                    </div>
+                  </div>     
+          </div>
+        </div>
+        </div>
+<!-- - Products card 5 -->
+
+<!-- + contact 6 -->
+        <section class="content mt-5">
+          <div class="container">
+           <div class="row">
+            <h3 class=" col-md-6  ">
+              Subscribe to our newsletter and
+              receive exclusive offers every week
+            </h3>
+            <div class="form col-md-6">
+              <input type="email" placeholder="Enter your email">
+              <button class="btn send ms-3">Send</button>
+            </div>
+           </div>
+          </div>
+
+
+        </section>
+<!-- - contact 6 -->
+
+<!-- + footer -->
+        <footer class="text-dark">
+          <div class="my-5 container">
+            <div class="row g-0">
+              <div class="div-footer div-logo col-12 col-md-12 col-lg-6">
+                <img class="img1" src="../img/sec1/logo-sm.png" alt="img-logo">
+                <span class=" py-3 span"> <span class="spanE">E-</span>Shop</span>
+                <p class="py-3 pae-fot">House My Brand designs clothing for the young, the old &
+                  everyone in between – but most importantly, for the fashionable</p>     
+                <div class="icon py-3">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-youtube"></i>
+                </div>
+               </div>
+  
+  
+               
+              <div class="col col-md-4 col-lg-2 text-dark">
+                  <h5>Shopping online</h5>
+                  <h6>Order Status</h6>
+                  <h6>Shipping and Delivery</h6>
+                  <h6>Returns</h6>
+                  <h6>Payment Options</h6>
+                  <h6>Contact Us</h6>
+               </div>
+             
+               <div class="col col-md-4 col-lg-2  text-dark ">
+                <h5>Information</h5>
+                <h6> Gift Cards</h6>
+                <h6> Find a store</h6>
+                <h6> Newsletter</h6>
+                <h6>Bacome a member</h6>
+                <h6>Site feedback</h6>
+             </div>
+             
+           
+             <div class="col col-md-4 col-lg-2  text-dark">
+              <h5>Contact</h5>
+              <h6>store@uikit.com</h6>
+              <h6>Hotline: +1 131 138 138</h6>
+           </div>
+            </div>
+          </div>
+
+
+          <div class="p">
+                <p>DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.</p>
+         </div>
+        </footer>   
+<!-- - footer -->
+
+<!-- + loginScreen -->
+        <section class="loginScreen  d-none forms text-black">
+          <button id="closeLogin" class="btn ">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div class="form login ">
+            <div class="form-content">
+        <header>Login</header>
+        <p>Lorem Ipsum is simply dummy text of the <br> printing </p>
+        <form action="#">
+          <div class="field input-field">
+            <input type="email" placeholder="E-mail" class="input">
+          </div>
+          <div class="field input-field">
+            <input type="password" placeholder="Password" class="password">
+            <i class="fa-regular fa-eye-slash eye-icon"></i>
+          </div>
+
+          <div class="form-link linkfog ">
+            <div><input type="checkbox"> <span>Keep me signed in</span></div>
+            <a href="#" class="forgot-pass linkfg">Forgot password?</a>
+          </div>
+
+          <div class="socail">
+            <div class="media-options">
+              <a href="#" class="field facebook">
+                <i class="fa-brands fa-facebook-f facebook-icon"></i>
+                <span>Facebook</span>
+              </a>
+            </div>
+      
+            <div class="media-options">
+              <a href="#" class="field gmail">
+                <i class="fa-thin fa-envelope gmail-icon"></i>
+                <span>Gmail</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="field button-field">
+            <button>Sign in</button>
+          </div>
+          
+          <div class="form-link">
+            <span>Not a member yet?<a href="#" class="link signup-link">Sign up</a> </span>
+          </div>
+        </form>
+      </div>
+      <!-- <div class="line"></div> -->
+
+    </div>
+
+<!-- Signup Form -->
+
+    <div class="form signup ">
+      <div class="form-content">
+        <header>
+          Create an account and <br>
+          discover the benefits
+        </header>
+        <p>Lorem Ipsum is simply dummy text of the <br>
+           printing and typesetting industry. Lorem <br>
+            Ipsum has been the industry's standard</p>
+        <form action="#">
+          <div class="field input-field">
+            <input type="text" placeholder="First Name" class="input">
+          </div>
+          <div class="field input-field">
+            <input type="text" placeholder="Last Name" class="input">
+          </div>
+          <div class="field input-field">
+            <input type="email" placeholder="Email" class="input">
+          </div>
+          <div class="field input-field">
+            <input type="password" placeholder="Password" class="password">
+            <i class="fa-regular fa-eye-slash eye-icon"></i>
+
+          </div>
+
+          <div class="form-link linkfog ">
+            <div><input type="checkbox"> 
+              <span class="check-span2">I agree to the Google Terms of Service and <br>
+              Privacy Policy</span>
+            </div>
+          </div>
+
+          <div class="field button-field">
+            <button>Sign in</button>
+          </div>
+          
+          <div class="form-link">
+            <span>Are you already a member? <a href="#" class="link signup-link">Sign up</a> </span>
+        
+          </div>
+        </form>
+      </div>
+      <!-- <div class="line"></div> -->
+
+    </div>
+
+<!-- Forgot password -->
+    <div class="form forgot h-75 ">
+      <div class="form-content ">
+        <header>Forgot your password?</header>
+        <p>Enter your email or phone number  <br>
+          and recover your account </p>
+        <form action="#">
+          <div class="field input-field">
+            <input type="email" placeholder="Email" class="input">
+          </div>
+          <div class="line"></div>
+
+          <div class="d-flex field input-field">
+            <input class="w-25" type="number">
+            <input  type="text" placeholder="Phone number" class="input w-75">
+          </div>
+          
+
+          <div class="field button-field">
+            <button>Reset password</button>
+          </div>
+          
+          <div class="form-link">
+            <span><a href="#" class="link signup-link">back</a> </span>
+          </div>
+        </form>
+      </div>
+    </div>
+
+        </section>
+<!-- - loginScreen -->
+
+
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-top  mt-5 " tabindex="-1" id="shirtList" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title mt-5" id="offcanvasTopLabelb">Shopping Cart</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+
+  </div>
+  <div class="offcanvas-footer py-3 pb-5 border-top text-center">
+    <h5>
+      Total cost: <span class="total "></span> $
+    </h5>
+    <button onclick="deletALLshit()" class="deletALLbtn">Delet ALL shirt in list </button>
+  </div>
+</div>
+<!-- offcanvas -->
+<!-- + go up -->
+<button id="goup" class="d-none ">
+  <i class="fa-solid fa-arrow-turn-up"></i>
+</button>
+<!-- - go up -->
+
+
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/cart.js"></script>
+
+</body>
+</html>
+
+
+   

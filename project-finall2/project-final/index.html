@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- fontawesome style css  -->
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- My css style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styl.css">
+     <!-- my responsev style css -->
+     <link rel="stylesheet" href="css/respon.css">
+    <title>Ec</title>
+</head>
+<body>
+
+<!-- header -->
+      <header class="header container-fluid ">
+        <div class="div-logo">
+                <img class="img1" src="../img/sec1/logo.png" alt="img-logo">
+                <span>E-Shop</span>
+        </div>
+        <nav class="navbar nav-menu" >
+                <a class="nav-link" aria-current="page" href="#">Men</a>
+                <a class="nav-link" href="#">Women</a>
+                <a class="nav-link" href="#">Kids</a>
+        </nav>
+          <div class="icon-head">
+            <i class=" fa-solid fa-magnifying-glass" id="search-icon"></i>
+            <i class=" fa-regular fa-cart-shopping"></i>
+            <i id="user" class="fa-regular fa-user"></i>
+                        <!-- <i id="bar" class=" fa-duotone fa-bars d-none" ></i> -->
+            <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         </div>
+    </div>
+    </header>
+
+    <form action="#" id="search-form">
+      <input type="search" placeholder="search here..." name="" id="search-box">
+      <label for="search-box" class=" fa-solid fa-magnifying-glass"></label>
+      <i class="fas fa-times" id="close"></i>
+    </form>
+    
+  <section class="loginScreen  d-none forms text-black">
+
+    <div class="form login ">
+        <button id="closed" >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+      <div class="form-content">
+        
+        <header class="mt-5">Login</header>
+        <p>Lorem Ipsum is simply dummy text of the <br> printing </p>
+        <form action="#">
+          <div class="field input-field">
+            <input type="email" placeholder="E-mail" class="input">
+          </div>
+          <div class="field input-field">
+            <input type="password" placeholder="Password" class="password">
+            <i class="fa-regular fa-eye-slash eye-icon"></i>
+          </div>
+
+          <div class="form-link linkfog ">
+            <div><input type="checkbox"> <span>Keep me signed in</span></div>
+            <a href="#" class="forgot-pass linkfg">Forgot password?</a>
+          </div>
+
+          <div class="socail">
+            <div class="media-options">
+              <a href="#" class="field facebook">
+                <i class="fa-brands fa-facebook-f facebook-icon"></i>
+                <span>Facebook</span>
+              </a>
+            </div>
+      
+            <div class="media-options">
+              <a href="#" class="field gmail">
+                <i class="fa-thin fa-envelope gmail-icon"></i>
+                <span>Gmail</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="field button-field">
+            <button>Sign in</button>
+          </div>
+          
+          <div class="form-link">
+            <span>Not a member yet?<a href="#" class="link signup-link">Sign up</a> </span>
+          </div>
+        </form>
+      </div>
+      <!-- <div class="line"></div> -->
+
+    </div>
+
+<!-- Signup Form -->
+
+    <div class="form signup ">
+        <button id="closed" >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+      <div class="form-content">
+        <header class="">
+          Create an account and <br>
+          discover the benefits
+        </header>
+        <p>Lorem Ipsum is simply dummy text of the <br>
+           printing and typesetting industry. Lorem <br>
+            Ipsum has been the industry's standard</p>
+        <form action="#">
+          <div class="field input-field">
+            <input type="text" placeholder="First Name" class="input">
+          </div>
+          <div class="field input-field">
+            <input type="text" placeholder="Last Name" class="input">
+          </div>
+          <div class="field input-field">
+            <input type="email" placeholder="Email" class="input">
+          </div>
+          <div class="field input-field">
+            <input type="password" placeholder="Password" class="password">
+            <i class="fa-regular fa-eye-slash eye-icon"></i>
+
+          </div>
+
+          <div class="form-link linkfog ">
+            <div><input type="checkbox"> 
+              <span class="check-span2">I agree to the Google Terms of Service and <br>
+              Privacy Policy</span>
+            </div>
+          </div>
+
+          <div class="field button-field">
+            <button>Sign in</button>
+          </div>
+          
+          <div class="form-link">
+            <span>Are you already a member? <a href="#" class="link signup-link">Sign up</a> </span>
+        
+          </div>
+        </form>
+      </div>
+      <!-- <div class="line"></div> -->
+
+    </div>
+
+<!-- Forgot password -->
+    <div class=" form forgot ">
+        <button id="closed" >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+      <div class="form-content ">
+        <header>Forgot your password?</header>
+        <p>Enter your email or phone number  <br>
+          and recover your account </p>
+        <form action="#">
+          <div class="field input-field">
+            <input type="email" placeholder="Email" class="input">
+          </div>
+          <div class="d-flex field input-field">
+            <input class="w-25" type="number">
+            <input  type="text" placeholder="Phone number" class="input w-75">
+          </div>
+          
+          <div class="line"></div>
+
+          <div class="field button-field">
+            <button>Reset password</button>
+          </div>
+          
+          <div class="form-link">
+            <span><a href="#" class="link signup-link">back</a> </span>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+   
+  </section>
+   <script>
+    const hamburger = document.querySelector(".hamburger"),
+         navbarMenu = document.querySelector('.nav-menu');
+
+         hamburger.addEventListener("click" , () =>{
+            hamburger.classList.toggle("active") ;
+            navbarMenu.classList.toggle("active")
+
+         })
+
+
+          // loginScreen
+      const loginScreen =document.querySelector(".loginScreen");
+      const user =document.querySelector("#user");
+      // console.log(loginScreen ,user)
+      user.addEventListener("click" , _=>{
+        loginScreen.classList.remove("d-none");
+
+      })
+    //   user.onclick = ()=>{
+    //     loginScreen.classList.remove("d-none"); 
+    //   }
+
+      const 
+            forms =document.querySelector(".forms"),
+            pwshowHide =document.querySelectorAll(".eye-icon"),
+            links =document.querySelectorAll(".link"),
+            linkfg =document.querySelectorAll(".linkfg");
+            // signup = document.querySelector(".signup")
+            // console.log(forms ,pwshowHide,links );
+
+            pwshowHide.forEach(eyeIcon => {
+              eyeIcon.addEventListener("click" , _=> {
+                let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
+                // console.log(pwFields);
+
+                pwFields.forEach(password =>{
+                  if ( password.type === "password"){
+                    password.type = "text";
+                    eyeIcon.classList.replace("bx-hide" ,"bx-show");
+                    return;
+                  }
+                  password.type = "password";
+                  eyeIcon.classList.replace("bx-show" ,"bx-hide");
+                })
+              })
+            })
+
+            links.forEach(link =>{
+              link.addEventListener("click" , e=>{
+                e.preventDefault(); // preventing form submit
+                forms.classList.toggle("show-signup");
+                forms.classList.remove("show-forgot");
+
+              })
+            })
+            linkfg.forEach(link =>{
+              link.addEventListener("click" , e=>{
+                e.preventDefault(); // preventing form submit
+                forms.classList.toggle("show-forgot");
+              })
+            })
+   </script>
+    <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+ <script src="../js/bootstrap.bundle.min.js"></script>
+ <!-- <script src="../js/mains.js"></script> -->
+</body>
+</html>
